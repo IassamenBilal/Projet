@@ -1,0 +1,305 @@
+:root {
+  --DarkBlue: #333347;
+  --mainBlue: #43425d;
+  --mainGrey: #ebedf0;
+  --mainwhite: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif !important;
+  background: var(--mainGrey) !important;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 10% 90%;
+  min-height: 100vh;
+}
+/*profile menu*/
+.profile {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background: var(--mainwhite);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.profile-name img {
+  margin-left: 15px;
+}
+.active-pink-2 input[type="text"]:focus:not([readonly]) {
+  border-bottom: 1px solid #f48fb1;
+  box-shadow: 0 1px 0 0 #f48fb1;
+}
+
+/*main menu*/
+.main-menu {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.logo {
+  background: #333347;
+  width: 100%;
+}
+.logo img {
+  width: 250px;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  background: #43425d;
+  min-height: 100%;
+  width: 100%;
+}
+.menu-container ul {
+  margin-top: 50px;
+  list-style: none;
+  width: 100%;
+}
+
+.menu-container li {
+  margin: 50px 0;
+  cursor: pointer;
+  width: 100%;
+  padding: 25px 0;
+  transition: border-left 0.5s;
+}
+
+.menu-container ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.menu-container li:hover {
+  background: rgb(51, 51, 71);
+  border-left: 2px solid white;
+}
+i {
+  margin-left: 10px;
+  color: white;
+}
+
+/* Accueil */
+
+.section {
+  min-height: 100vh;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.car-container {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  padding: 100px 0;
+  box-shadow: 0 5px 30px rgba(51, 51, 71, 0.2);
+}
+.text-container ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+  list-style: none;
+}
+.text-container li {
+  margin-left: 20px;
+}
+.text-container i {
+  color: var(--mainBlue);
+  padding: 10px;
+}
+.img-container img {
+  width: 70%;
+  height: 70%;
+  float: right;
+  margin-right: 15px;
+}
+
+/* Plan de maintenance  */
+
+.section h2 {
+  margin-left: 10%;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.plan-maintenance {
+  background: white;
+  width: 80%;
+  margin: 50px auto;
+  box-shadow: 0 5px 50px rgba(51, 51, 71, 0.3);
+}
+.filtre-intervention h3 {
+  padding: 20px;
+  font-weight: 400;
+}
+.section .plan-maintenance form {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.section .plan-maintenance form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.section form label {
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+form .form-control {
+  width: 50%;
+  font-size: 15px;
+}
+
+.section .plan-maintenance form .btn-form {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section form .btn-form button {
+  width: 40%;
+  text-align: center;
+}
+
+.table-intervention {
+  padding: 10px;
+}
+.section .plan-maintenance form .dates {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+/* Creer Plan de maintenance */
+.section1 {
+  min-height: 100vh;
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+.section1 h2 {
+  margin-left: 10%;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.plan-maintenance1 {
+  background: white;
+  width: 80%;
+  margin: 50px auto;
+  box-shadow: 0 5px 50px rgba(51, 51, 71, 0.3);
+}
+
+.plan-maintenance1 form {
+  width: 90%;
+  margin: 0px auto;
+  padding: 50px 0px;
+}
+
+.form1 {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.form1 .form-control {
+  width: 100%;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+.labels div {
+  height: 120px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs div {
+  margin-bottom: 30px;
+  height: 90px;
+}
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.check-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.check-box input {
+  margin-right: 5px;
+  margin-top: 7px;
+}
+
+.repeat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.repeat input,
+select {
+  margin-right: 20px;
+}
+.datefin {
+  display: flex;
+  flex-direction: row;
+}
+.datefin input[type="date"],
+.datefin input[type="number"] {
+  width: 50%;
+  margin: 0 20px;
+}
+.datefin input[type="radio"] {
+  margin-top: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button {
+  margin: 0 50px;
+  width: 150px;
+}
+.btn-annuler {
+  border: 1px solid black;
+}
